@@ -2,7 +2,7 @@
 using System.Text.Json.Serialization;
 
 using CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
-using CSM_Foundation_Core.Core.Exceptions;
+using CSM_Foundation_Core.Core.Errors;
 
 namespace CSM_Foundation_Core.Convertion.Abstractions.Bases;
 
@@ -54,6 +54,7 @@ public abstract class ConverterBase<TBase>
         }
     }
 
+    /// <inheritdoc/>
     public override TBase? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
         JsonDocument document = JsonDocument.ParseValue(ref reader);
         JsonElement element = document.RootElement;
@@ -83,6 +84,7 @@ public abstract class ConverterBase<TBase>
             );
     }
 
+    /// <inheritdoc/>
     public override void Write(Utf8JsonWriter writer, TBase value, JsonSerializerOptions options) {
         foreach (Type variation in Variants) {
 

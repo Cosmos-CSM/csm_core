@@ -13,23 +13,29 @@ public abstract class ErrorBase<TEvent>
     : Exception, IException<TEvent>
     where TEvent : Enum {
 
+    /// <inheritdoc/>
     public string Advise { get; init; }
 
+    /// <inheritdoc/>
     public TEvent Event { get; init; }
 
+    /// <inheritdoc/>
     public object EventCode { get => Convert.ToInt32(Event); }
 
+    /// <inheritdoc/>
     public Exception? Exception { get; init; }
 
+    /// <inheritdoc/>
     public ErrorFeedback[] Feedback { get; init; }
 
+    /// <inheritdoc/>
     public new IDictionary<string, object?> Data { get; init; }
 
     /// <summary>
     ///     Creates a new instance.
     /// </summary>
-    /// <param name="subject">
-    ///     Exception subject.
+    /// <param name="message">
+    ///     Error message.
     /// </param>
     /// <param name="event">
     ///     Exception trigger event.

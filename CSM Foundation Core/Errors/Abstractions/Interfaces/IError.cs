@@ -56,5 +56,6 @@ public interface IException<TEvent>
     : IError
     where TEvent : Enum {
 
+    /// <inheritdoc/>
     TEvent Event { get; }
 }

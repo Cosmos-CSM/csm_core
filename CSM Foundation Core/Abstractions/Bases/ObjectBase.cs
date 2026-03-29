@@ -2,14 +2,19 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
+using CSM_Foundation_Core.Core.Utils;
+
 namespace CSM_Foundation_Core.Abstractions.Bases;
 
 /// <summary>
 ///     Represents an inheritance link between datasource objects
 ///     that need specific equality comparisson between their properties.
 /// </summary>
-public abstract class ObjectBase<TObject> {
+public abstract class ObjectBase<TObject>
+    : object
+    where TObject : ObjectBase<TObject> {
 
+    /// <inheritdoc/>
     public override bool Equals(object? comparer) {
         PropertyInfo[] exceptions = [];
 
@@ -77,7 +82,7 @@ public abstract class ObjectBase<TObject> {
         return true;
     }
 
-
+    /// <inheritdoc/>
     public override string ToString() {
         Dictionary<string, dynamic?> jsonReference = [];
         PropertyInfo[] propReferences = GetType().GetProperties();
@@ -93,6 +98,8 @@ public abstract class ObjectBase<TObject> {
                 }
             );
     }
+
+    /// <inheritdoc/>
     public override int GetHashCode() {
         return base.GetHashCode();
     }
@@ -106,7 +113,7 @@ public abstract class ObjectBase<TObject> {
     /// <returns>
     ///     Property reflected info.
     /// </returns>
-    /// <exception cref="XGetProperty"> 
+    /// <exception cref="Exception"> 
     ///     If the Property wasn't find.
     /// </exception>
     public PropertyInfo GetProperty(string name) {
@@ -118,17 +125,13 @@ public abstract class ObjectBase<TObject> {
         return tracedProperty;
     }
 
+    /// <summary>
+    ///     Clones the current object into a new instance with the same property values.
+    /// </summary>
+    /// <returns>
+    ///     Cloned <typeparamref name="TObject"/> instance.
+    /// </returns>
     public TObject Clone() {
-        Type ObjectType = typeof(TObject);
-
-        TObject? Cloned = (TObject?)Activator.CreateInstance(ObjectType)
-            ?? throw new Exception("PENDING WRONG ACTIVATION");
-        PropertyInfo[] ObjectPropertiesInfo = ObjectType.GetProperties();
-        foreach (PropertyInfo PropertyInfo in ObjectPropertiesInfo) {
-            object? OriginalValue = PropertyInfo.GetValue(this);
-            PropertyInfo.SetValue(Cloned, OriginalValue);
-        }
-
-        return Cloned.GetHashCode() == GetHashCode() ? throw new Exception("PEDNING SAME HASH") : Cloned;
+        return ObjectUtils.Clone((TObject)this);
     }
 }
