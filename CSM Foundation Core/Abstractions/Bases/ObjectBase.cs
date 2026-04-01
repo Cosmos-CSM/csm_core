@@ -6,13 +6,30 @@ using CSM_Foundation_Core.Core.Utils;
 
 namespace CSM_Foundation_Core.Abstractions.Bases;
 
+/// <inheritdoc cref="ObjectBase"/>
+/// <typeparam name="TObject">
+///     Object implementation type.
+/// </typeparam>
+public abstract class ObjectBase<TObject>
+    : object
+    where TObject : ObjectBase<TObject> {
+
+    /// <summary>
+    ///     Clones the current object into a new instance with the same property values.
+    /// </summary>
+    /// <returns>
+    ///     Cloned <typeparamref name="TObject"/> instance.
+    /// </returns>
+    public TObject Clone() {
+        return ObjectUtils.Clone((TObject)this);
+    }
+}
+
 /// <summary>
 ///     Represents an inheritance link between datasource objects
 ///     that need specific equality comparisson between their properties.
 /// </summary>
-public abstract class ObjectBase<TObject>
-    : object
-    where TObject : ObjectBase<TObject> {
+public class ObjectBase {
 
     /// <inheritdoc/>
     public override bool Equals(object? comparer) {
@@ -123,15 +140,5 @@ public abstract class ObjectBase<TObject>
             ?? throw new Exception(""); //TODO: REPLACE THIS
 
         return tracedProperty;
-    }
-
-    /// <summary>
-    ///     Clones the current object into a new instance with the same property values.
-    /// </summary>
-    /// <returns>
-    ///     Cloned <typeparamref name="TObject"/> instance.
-    /// </returns>
-    public TObject Clone() {
-        return ObjectUtils.Clone((TObject)this);
     }
 }
