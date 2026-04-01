@@ -1,12 +1,13 @@
 # CSM Foundation Core CHANGELOG
 
-## [4.0.0-rc.2] - 29.3-2026
+## [4.0.0-rc.3] - 29.3-2026
 
 ### Remved
 
 - Removed [GenericUtils] class cause i only had a method for object clonation, replaced and moved to [ObjectUtils] with the method [Clone].
 - Added new Error concepts and better error handling for some features that weren´t being handled correclty.
 - Added a simplified [ObjectBase] abstraction for non used generic methods. 
+- Removed [ObjectBase{TEntity}] cause an utility method was created.
 
 #### Dependencies
 
