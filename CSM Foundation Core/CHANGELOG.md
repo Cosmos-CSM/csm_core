@@ -1,8 +1,21 @@
 # CSM Foundation Core CHANGELOG
 
+
+## [x.x.x] - xx.xx-xxxx
+
+### Added
+
+- Added [ResourceType] enum to handle the resource types in CSM systems.
+
+#### Dependencies
+
+| Package                                 | Previous Version | New Version     |
+|:----------------------------------------|:----------------:|:---------------:|
+|                                         |                  |                 |
+
 ## [4.0.0] - 19.05-2026
 
-### Remved
+### Removed
 
 - Removed [GenericUtils] class cause i only had a method for object clonation, replaced and moved to [ObjectUtils] with the method [Clone].
 
