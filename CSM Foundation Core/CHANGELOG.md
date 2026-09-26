@@ -6,6 +6,7 @@
 ### Added
 
 - Added [ResourceType] enum to handle the resource types in CSM systems.
+- Added [ScalarValue] enum to handle the scalar value types in CSM systems.
 
 #### Dependencies
 

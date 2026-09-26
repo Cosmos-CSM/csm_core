@@ -12,5 +12,5 @@ public enum ResourceType {
     /// <summary>
     ///     When the resource has local or network access data.
     /// </summary>
-    FILE
+    FILE, 
 }
