@@ -1,7 +1,7 @@
 ﻿namespace CSM_Foundation_Core.Core.Resources;
 
 /// <summary>
-///      Resources types enumerator.
+///     Resource types enumeration.
 /// </summary>
 public enum ResourceType {
     /// <summary>
