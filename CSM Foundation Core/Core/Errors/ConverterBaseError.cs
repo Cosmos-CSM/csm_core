@@ -2,7 +2,7 @@
 using CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
 using CSM_Foundation_Core.Errors.Abstractions.Bases;
 
-namespace CSM_Foundation_Core.Core.Exceptions;
+namespace CSM_Foundation_Core.Core.Errors;
 
 /// <summary>
 ///     <see cref="ConverterBaseError"/> Exception situations enumerator.
@@ -34,15 +34,17 @@ public class ConverterBaseError
     /// <summary>
     ///     Creates a new <see cref="ConverterBaseError"/> instance.
     /// </summary>
-    /// <param name="situation">
-    ///     Exception situation.
+    /// <param name="event">
+    ///     Error event.
     /// </param>
-    /// 
+    /// <param name="wrongVariations">
+    ///     Wrong variations found.
+    /// </param>
     /// <param name="discriminator">
     ///     Discriminator when the variation convertion fails.
     /// </param>
-    public ConverterBaseError(ConverterBaseErrorEvents situation, Type[]? wrongVariations = null, string discriminator = "")
-        : base("CSM Converter Exception", situation) {
+    public ConverterBaseError(ConverterBaseErrorEvents @event, Type[]? wrongVariations = null, string discriminator = "")
+        : base("CSM Converter Exception", @event) {
 
         wrongVariations ??= [];
         Data = new Dictionary<string, object?> {

@@ -1,5 +1,49 @@
 # CSM Foundation Core CHANGELOG
 
+
+## [x.x.x] - xx.xx-xxxx
+
+### Added
+
+- Added [ResourceType] enum to handle the resource types in CSM systems.
+- Added [ScalarValue] enum to handle the scalar value types in CSM systems.
+
+#### Dependencies
+
+| Package                                 | Previous Version | New Version     |
+|:----------------------------------------|:----------------:|:---------------:|
+|                                         |                  |                 |
+
+## [4.0.0] - 19.05-2026
+
+### Removed
+
+- Removed [GenericUtils] class cause i only had a method for object clonation, replaced and moved to [ObjectUtils] with the method [Clone].
+
+- Added new Error concepts and better error handling for some features that weren´t being handled correclty.
+
+- Added a simplified [ObjectBase] abstraction for non used generic methods. 
+
+- Removed [ObjectBase{TEntity}] cause an utility method was created.
+
+#### Dependencies
+
+| Package                                 | Previous Version | New Version     |
+|:----------------------------------------|:----------------:|:---------------:|
+|                                         |                  |                 |
+
+## [3.0.0] - 25.12-2025
+
+### Remved
+
+- Removed from errors model [ErrorInfo] since it was only needed when internal errors are exposed to connected services with critical information.
+
+#### Dependencies
+
+| Package                                 | Previous Version | New Version     |
+|:----------------------------------------|:----------------:|:---------------:|
+|                                         |                  |                 |
+
 ## [2.1.1] - 24.12-2025
 
 ### Changed

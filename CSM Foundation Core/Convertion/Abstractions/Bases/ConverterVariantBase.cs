@@ -6,6 +6,7 @@ namespace CSM_Foundation_Core.Convertion.Abstractions.Bases;
 public abstract class ConverterVariantBase
     : IConverterVariant {
 
+    /// <inheritdoc/>
     public string Discriminator { get; init; }
 
     /// <summary>
