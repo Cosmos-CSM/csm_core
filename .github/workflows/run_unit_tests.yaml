@@ -33,12 +33,15 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Restore dependencies
+        working-directory: csharp_extension
         run: dotnet restore
 
       - name: Build solution
+        working-directory: csharp_extension
         run: |
           dotnet build --no-restore --configuration Release
 
       - name: Run tests
+        working-directory: csharp_extension
         run: |
           dotnet test --no-build --configuration Release --verbosity normal

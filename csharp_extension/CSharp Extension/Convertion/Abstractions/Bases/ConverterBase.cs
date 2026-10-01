@@ -2,7 +2,6 @@
 using System.Text.Json.Serialization;
 
 using CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
-using CSM_Foundation_Core.Core.Errors;
 
 namespace CSM_Foundation_Core.Convertion.Abstractions.Bases;
 

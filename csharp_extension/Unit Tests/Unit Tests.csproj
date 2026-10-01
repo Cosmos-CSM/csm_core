@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CSM Foundation Core\CSM Foundation Core.csproj" />
+    <ProjectReference Include="..\CSharp Extension\CSharp Extension.csproj" />
   </ItemGroup>
 
   <ItemGroup>
