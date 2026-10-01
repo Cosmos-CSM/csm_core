@@ -1,7 +1,7 @@
 ﻿using CSM_Foundation_Core.Errors.Abstractions.Bases;
 using CSM_Foundation_Core.Errors.Models;
 
-namespace CSM_Foundation_Core.Core.Errors;
+namespace CSM_Foundation_Core.Errors;
 
 
 /// <summary>

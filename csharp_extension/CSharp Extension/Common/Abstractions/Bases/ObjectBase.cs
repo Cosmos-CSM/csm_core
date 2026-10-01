@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace CSM_Foundation_Core.Abstractions.Bases;
+namespace CSM_Foundation_Core.Common.Abstractions.Bases;
 
 /// <summary>
 ///     Represents an inheritance link between datasource objects
