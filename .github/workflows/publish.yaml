@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      CS_PROJECT_PATH: 'CSM Foundation Core/CSM Foundation Core.csproj'
+      CS_PROJECT_PATH: 'csharp_extension/CSharp Extension/CSharp Extension.csproj'
 
     steps:
       - name: 🔄 Checkout repo

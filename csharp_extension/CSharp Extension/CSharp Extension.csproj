@@ -2,12 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>CSM_Foundation_Core</RootNamespace>
-		<PackageId>CSM.Foundation.Core</PackageId>
-		<Version>4.0.0</Version>
+        <RootNamespace>CSharp_Extension</RootNamespace>
+		<PackageId>csm.extension</PackageId>
+		<Version>1.2.4</Version>
 		<Authors>Renato Urrea</Authors>
 		<Company>Cosmos (CSM)</Company>
-		<RepositoryUrl>https://github.com/Cosmos-CSM/csm_foundation_core</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Cosmos-CSM/fe_csharp</RepositoryUrl>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>

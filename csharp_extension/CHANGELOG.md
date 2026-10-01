@@ -2,6 +2,20 @@
 
 Here you will be able to see and identify changes along each package delivered version.
 
+## **[1.2.4] (30.09-2026)**
+
+### **Enhancements**
+
+Content that were added.
+
+- Added [ScalarValues] enumerator to handle specific dynamic typing operations on business entities.
+
+### **Improvements**
+
+Improvements made on already existing content.
+
+- Organizeed structure along errors, common and abstractions on their specific scope.
+
 ## **[1.2.3] (06.08-2025)**
 
 ### **Enhancements**
