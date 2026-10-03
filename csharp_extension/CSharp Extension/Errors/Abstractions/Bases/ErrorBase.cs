@@ -1,7 +1,8 @@
-﻿using CSM_Foundation_Core.Errors.Abstractions.Interfaces;
-using CSM_Foundation_Core.Errors.Models;
+﻿using CSharp_Extension;
+using CSharp_Extension.Errors.Abstractions.Interfaces;
+using CSharp_Extension.Errors.Models;
 
-namespace CSM_Foundation_Core.Errors.Abstractions.Bases;
+namespace CSharp_Extension.Errors.Abstractions.Bases;
 
 /// <summary>
 ///     Represents a CSM Exception thrown by the system.

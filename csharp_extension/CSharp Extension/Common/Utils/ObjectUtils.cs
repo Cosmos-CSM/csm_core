@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CSM_Foundation_Core.Core.Utils;
+namespace CSharp_Extension.Common.Utils;
 
 
 /// <summary>

@@ -1,4 +1,4 @@
-﻿namespace CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
+﻿namespace CSharp_Extension.Convertion.Abstractions.Interfaces;
 
 /// <summary>
 ///     Represents a JSON converter.

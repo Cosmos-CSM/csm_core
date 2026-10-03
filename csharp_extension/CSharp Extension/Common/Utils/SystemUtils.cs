@@ -1,6 +1,7 @@
-﻿using CSM_Foundation_Core.Errors.Abstractions.Bases;
+﻿using CSharp_Extension;
+using CSharp_Extension.Errors.Abstractions.Bases;
 
-namespace CSM_Foundation_Core.Core.Utils;
+namespace CSharp_Extension.Common.Utils;
 
 
 /// <summary>

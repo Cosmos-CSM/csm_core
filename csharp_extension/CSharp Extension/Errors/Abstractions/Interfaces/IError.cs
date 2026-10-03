@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-using CSM_Foundation_Core.Errors.Models;
+using CSharp_Extension.Errors.Models;
 
-namespace CSM_Foundation_Core.Errors.Abstractions.Interfaces;
+namespace CSharp_Extension.Errors.Abstractions.Interfaces;
 
 /// <summary>
 ///     Represents a CSM Exception thrown by the system.

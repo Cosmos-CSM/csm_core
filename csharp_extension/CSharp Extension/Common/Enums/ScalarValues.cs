@@ -1,4 +1,4 @@
-﻿namespace CSM_Foundation_Core.Common.Enums;
+﻿namespace CSharp_Extension.Common.Enums;
 
 
 /// <summary>
