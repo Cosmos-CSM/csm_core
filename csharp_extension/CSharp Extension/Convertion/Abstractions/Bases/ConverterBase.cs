@@ -1,9 +1,9 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-using CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
+using CSharp_Extension.Convertion.Abstractions.Interfaces;
 
-namespace CSM_Foundation_Core.Convertion.Abstractions.Bases;
+namespace CSharp_Extension.Convertion.Abstractions.Bases;
 
 /// <inheritdoc cref="IConverter{TBase}"/>
 /// <typeparam name="TBase">

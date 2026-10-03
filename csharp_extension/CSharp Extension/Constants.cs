@@ -1,4 +1,4 @@
-﻿namespace CSM_Foundation_Core;
+﻿namespace CSharp_Extension;
 
 /// <summary>
 ///     Stores common use constants.

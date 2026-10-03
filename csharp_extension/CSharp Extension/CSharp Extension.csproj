@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <RootNamespace>CSharp_Extension</RootNamespace>
-		<PackageId>csm.extension</PackageId>
-		<Version>1.2.4</Version>
+		<PackageId>CSharp.Extension</PackageId>
+		<Version>1.2.5</Version>
 		<Authors>Renato Urrea</Authors>
 		<Company>Cosmos (CSM)</Company>
 		<RepositoryUrl>https://github.com/Cosmos-CSM/fe_csharp</RepositoryUrl>

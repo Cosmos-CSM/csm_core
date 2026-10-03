@@ -1,4 +1,4 @@
-﻿namespace CSM_Foundation_Core.Core.Extensions;
+﻿namespace CSharp_Extension.Common.Extensions;
 
 
 /// <summary>

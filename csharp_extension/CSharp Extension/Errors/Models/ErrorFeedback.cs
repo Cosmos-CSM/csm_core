@@ -1,4 +1,4 @@
-﻿namespace CSM_Foundation_Core.Errors.Models;
+﻿namespace CSharp_Extension.Errors.Models;
 
 /// <summary>
 ///     Enumerates the severity of the exception feedback.

@@ -1,11 +1,11 @@
 ﻿using System.Text.Json;
 
-using CSM_Foundation_Core.Errors.Abstractions.Interfaces;
+using CSharp_Extension.Errors.Abstractions.Interfaces;
 
 using Detail = System.Collections.Generic.KeyValuePair<string, object?>;
 using Details = System.Collections.Generic.Dictionary<string, object?>;
 
-namespace CSM_Foundation_Core.Core.Utils;
+namespace CSharp_Extension.Common.Utils;
 
 /// <summary>
 ///     Provides utils methods related with the .Net Console integration.

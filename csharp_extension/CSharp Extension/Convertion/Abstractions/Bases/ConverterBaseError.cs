@@ -1,7 +1,7 @@
-﻿using CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
-using CSM_Foundation_Core.Errors.Abstractions.Bases;
+﻿using CSharp_Extension.Convertion.Abstractions.Interfaces;
+using CSharp_Extension.Errors.Abstractions.Bases;
 
-namespace CSM_Foundation_Core.Convertion.Abstractions.Bases;
+namespace CSharp_Extension.Convertion.Abstractions.Bases;
 
 /// <summary>
 ///     <see cref="ConverterBaseError"/> Exception situations enumerator.

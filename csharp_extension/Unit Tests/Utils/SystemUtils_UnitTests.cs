@@ -1,5 +1,5 @@
-﻿using CSM_Foundation_Core;
-using CSM_Foundation_Core.Core.Utils;
+﻿using CSharp_Extension;
+using CSharp_Extension.Common.Utils;
 
 namespace Unit_Tests.Utils;
 

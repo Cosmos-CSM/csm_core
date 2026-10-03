@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace CSM_Foundation_Core.Convertion.Abstractions.Interfaces;
+namespace CSharp_Extension.Convertion.Abstractions.Interfaces;
 
 /// <summary>
 ///     Represents a <see cref="IConverter{TBase}"/> handled variant.
